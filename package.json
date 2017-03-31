@@ -1,0 +1,39 @@
+{
+  "name": "gatsby-starter-blog-multiple-authors",
+  "version": "0.1.0",
+  "description": "A Gatsby starter for a blog with multiple authors",
+  "main": "n/a",
+  "repository": "https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors",
+  "author": {
+    "name": "Emily Aviva Kapor-Mater",
+    "email": "emily@emilyaviva.com",
+    "url": "https://www.emilyaviva.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "rm -rf public/*",
+    "dev": "gatsby develop",
+    "lint": "standard --verbose | snazzy",
+    "serve-build": "NODE_ENV=production gatsby build && gatsby serve-build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "date-fns": "^1.28.2",
+    "excerpt-html": "^1.2.0",
+    "feed": "^0.3.1",
+    "font-awesome": "^4.7.0",
+    "front-matter": "^2.1.2",
+    "gatsby": "^0.12.39",
+    "lodash": "^4.17.4",
+    "react-helmet": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.2"
+  }
+}

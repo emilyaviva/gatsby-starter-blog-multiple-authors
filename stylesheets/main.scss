@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i');
+
+
+$white: #ffffff;
+$offwhite: #eaeaea;
+$shadowgrey: #777777;
+$shadowgreyfade: rgba(18,18,18,0.63);
+$black: #000000;
+$brand-blue: #5e89b6;
+$text-color: $black;
+
+body {
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  background-color: $offwhite;
+  a {
+    text-decoration: none;
+    color: darken($brand-blue, 14%);
+  }
+}
+
+.SiteHeader {
+  display: flex;
+  justify-content: center;
+  background: $brand-blue;
+  box-shadow: 1px 3px 2px 2.2px rgba(18,18,18,0.63);
+  font-size: 24px;
+  padding: 15px 0;
+  a {
+    color: $offwhite;
+    text-shadow: 2px 2px 2px $black;
+  }
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  .card {
+    background-color: lighten($offwhite, 7%);
+    box-shadow: 0 0 0 1px $shadowgrey, 0 0 0 6px $white, 0 0 0 6.7px $shadowgrey, 1px 3px 8px 8.7px $shadowgreyfade;
+    padding: 22px;
+    margin: 36px 0;
+  }
+}
+
+.SiteFooter {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 32px;
+}
+
+.BlogIndex {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      border: 1px solid grey;
+      .stub-line {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .stub-left {
+          font-size: 20px;
+        }
+        .stub-right {
+          text-align: right;
+          font-size: 12px;
+        }
+        span {
+          display: block;
+        }
+      }
+      .read-more {
+        margin-top: 6px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.FeedLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 14px;
+}
+
+.BlogPost {
+  .post-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px auto 32px;
+    width: 550px;
+    h1,
+    h5 {
+      margin: 6px;
+    }
+  }
+  .post-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Bio {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .bio-name {
+    font-size: 18px;
+  }
+  .bio-bio {
+    font-size: 14px;
+  }
+}
