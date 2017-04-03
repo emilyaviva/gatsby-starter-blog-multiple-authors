@@ -38,5 +38,7 @@ This starter includes a script to generate an Atom feed of the blog's posts when
 ## Contributing
 Send your pull requests to this project's [repository](https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors) on GitHub.
 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## License
 The code of this starter is freely licensed under the [MIT License](https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors/blob/master/LICENSE). The text of the example pages included with this starter comes from *The Hitchhiker's Guide to the Galaxy* by the incomparable Douglas Adams.
