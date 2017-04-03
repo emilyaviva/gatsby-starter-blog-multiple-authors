@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import Helmet from 'react-helmet'
 import { config } from 'config'
+import { prefixLink } from 'gatsby-helpers'
 import format from 'date-fns/format'
 import kebabCase from 'lodash/kebabCase'
 import findIndex from 'lodash/findIndex'
@@ -52,7 +53,7 @@ class MarkdownWrapper extends Component {
         ? <span>
           <i className='fa fa-angle-double-left' aria-hidden='true' />
           {' Previous Post: '}
-          <Link to={`${prevPostObject.data.path}/`}>
+          <Link to={prefixLink(`${prevPostObject.data.path}/`)}>
             {prevPostObject.data.title}
           </Link>
         </span>
@@ -63,7 +64,7 @@ class MarkdownWrapper extends Component {
       {nextPostObject
         ? <span>
           {'Next Post: '}
-          <Link to={`${nextPostObject.data.path}/`}>
+          <Link to={prefixLink(`${nextPostObject.data.path}/`)}>
             {nextPostObject.data.title}
           </Link>
           {' '}

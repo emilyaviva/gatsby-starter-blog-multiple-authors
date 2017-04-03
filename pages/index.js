@@ -5,6 +5,7 @@ import get from 'lodash/get'
 import includes from 'lodash/includes'
 import Helmet from 'react-helmet'
 import { config } from 'config'
+import { prefixLink } from 'gatsby-helpers'
 import format from 'date-fns/format'
 import excerptHtml from 'excerpt-html'
 
@@ -27,12 +28,15 @@ class BlogIndex extends Component {
         <ul>
           {visiblePages.map(page => (
             <li key={page.path} className='card'>
-              <Link to={page.path}>
+              <Link to={prefixLink(page.path)}>
                 <div className='stub-line'>
                   <div className='stub-left'>
                     {get(page, 'data.title', page.path)}
                   </div>
                   <div className='stub-right'>
+                    <span>
+                      {`by ${get(page, 'data.author')}`}
+                    </span>
                     <span>
                       {format(get(page, 'data.date'), 'MMM D, YYYY')}
                     </span>
@@ -42,13 +46,13 @@ class BlogIndex extends Component {
               <div
                 className='excerpt'
                 dangerouslySetInnerHTML={{
-                  __html: excerptHtml(get(page, 'data.body'), {
+                  __html: `${excerptHtml(get(page, 'data.body'), {
                     stripTags: false,
                     pruneLength: 300
-                  }) }}
+                  })} …` }}
               />
               <div className='read-more'>
-                <Link to={page.path}>
+                <Link to={prefixLink(page.path)}>
                   Read more… <i className='fa fa-angle-double-right' aria-hidden='true' />
                 </Link>
               </div>

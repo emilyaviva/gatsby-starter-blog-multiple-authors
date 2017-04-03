@@ -8,6 +8,7 @@ $shadowgreyfade: rgba(18,18,18,0.63);
 $black: #000000;
 $brand-blue: #5e89b6;
 $text-color: $black;
+$code-background-color: cornsilk;
 
 body {
   margin: 0 auto;
@@ -17,6 +18,11 @@ body {
   a {
     text-decoration: none;
     color: darken($brand-blue, 14%);
+  }
+  code {
+    background-color: $code-background-color;
+    border: 1px solid darken($code-background-color, 20%);
+    padding: 1px;
   }
 }
 
