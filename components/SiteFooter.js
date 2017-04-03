@@ -1,12 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
 
 const Footer = () =>
   <footer className='SiteFooter'>
-    <Link to={prefixLink(`/atom.xml`)}>
+    <a href='/atom.xml'>
       <i className='fa fa-rss' aria-hidden='true' />{' '}Atom Feed
-    </Link>
+    </a>
   </footer>
 
 export default Footer
