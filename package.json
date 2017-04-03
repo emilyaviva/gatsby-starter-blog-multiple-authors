@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-blog-multiple-authors",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Gatsby starter for a blog with multiple authors",
   "main": "n/a",
   "repository": "https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors",
@@ -16,6 +16,7 @@
     "dev": "gatsby develop",
     "lint": "standard --verbose | snazzy",
     "serve-build": "NODE_ENV=production gatsby build && gatsby serve-build",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
@@ -33,6 +34,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.1",
+    "fs-extra": "^2.1.2",
+    "gh-pages": "^0.12.0",
     "snazzy": "^6.0.0",
     "standard": "^9.0.2"
   }

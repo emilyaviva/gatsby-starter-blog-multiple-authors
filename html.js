@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import Helmet from 'react-helmet'
+import { prefixLink } from 'gatsby-helpers'
 
 const BUILD_TIME = new Date().getTime()
 let css
@@ -20,7 +21,7 @@ const Html = ({ body }) =>
     </head>
     <body>
       <div id='react-mount' dangerouslySetInnerHTML={{ __html: body }} />
-      <script src={`/bundle.js?t=${BUILD_TIME}`} />
+      <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
     </body>
   </html>
 
