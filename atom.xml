@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gatsby-starter-blog-multiple-authors.github.io</id>
     <title>Gatsby Blog With Multiple Authors</title>
-    <updated>2017-04-03T21:26:17Z</updated>
+    <updated>2017-04-03T21:28:49Z</updated>
     <link rel="alternate" href="https://gatsby-starter-blog-multiple-authors.github.io"/>
     <subtitle>An example blog, written in Gatsby.js, supporting posts by multiple authors.</subtitle>
     <rights>Copyright notice goes here. Some rights reserved, or not.</rights>
@@ -33,6 +33,7 @@
 <p>This starter includes a script to generate an Atom feed of the blog's posts whenever the site is built. The feed is exported to <code>atom.xml</code>. The script itself that generates the feed lives at <code>scripts/buildFeed.js</code> and is called as a special post-build task from <code>gatsby-node.js</code>.</p>
 <h2>Contributing</h2>
 <p>Send your pull requests to this project's <a href="https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors">repository</a> on GitHub.</p>
+<p><a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style Guide"></a></p>
 <h2>License</h2>
 <p>The code of this starter is freely licensed under the <a href="https://github.com/emilyaviva/gatsby-starter-blog-multiple-authors/blob/master/LICENSE">MIT License</a>. The text of the example pages included with this starter comes from <em>The Hitchhiker's Guide to the Galaxy</em> by the incomparable Douglas Adams.</p>
 ]]></content>
