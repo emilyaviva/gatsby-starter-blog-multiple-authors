@@ -1,8 +1,9 @@
 import React from 'react'
+import { prefixLink } from 'gatsby-helpers'
 
 const Footer = () =>
   <footer className='SiteFooter'>
-    <a href='https://emilyaviva.github.io/gatsby-starter-blog-multiple-authors/atom.xml'>
+    <a href={prefixLink('/atom.xml')}>
       <i className='fa fa-rss' aria-hidden='true' />{' '}Atom Feed
     </a>
   </footer>
