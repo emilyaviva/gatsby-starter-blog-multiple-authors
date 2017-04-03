@@ -1,5 +1,7 @@
 # Gatsby Starter — Blog with Multiple Authors
 
+[Live Demo Site](https://emilyaviva.github.io/gatsby-starter-blog-multiple-authors)
+
 This is a starter for [Gatsby](https://github.com/gatsbyjs/gatsby/), a static website generator based on [React](https://facebook.github.io/react/). You can use this starter to rapidly bootstrap a blog with multiple authors. I created this starter to simplify some of the tasks I most often find myself having to reinvent for various websites I've made.
 
 ## How it works
