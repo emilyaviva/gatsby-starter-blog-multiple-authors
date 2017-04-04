@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gatsby-starter-blog-multiple-authors.github.io</id>
     <title>Gatsby Blog With Multiple Authors</title>
-    <updated>2017-04-03T21:28:49Z</updated>
+    <updated>2017-04-04T20:24:32Z</updated>
+    <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://gatsby-starter-blog-multiple-authors.github.io"/>
     <subtitle>An example blog, written in Gatsby.js, supporting posts by multiple authors.</subtitle>
     <rights>Copyright notice goes here. Some rights reserved, or not.</rights>
-    <generator>Feed for Node.js</generator>
     <entry>
         <title type="html"><![CDATA[Welcome to the Multi-Author Blog Starter]]></title>
         <id>/welcome-to-the-multi-author-blog-starter/</id>
