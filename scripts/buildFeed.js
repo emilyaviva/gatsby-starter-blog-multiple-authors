@@ -38,7 +38,7 @@ function buildFeed (pages, callback) {
   })
   fs.writeFileSync(
     path.join(__dirname, '..', 'public', 'atom.xml'),
-    feed.render('atom-1.0')
+    feed.atom1()
   )
   // Next callback.
   callback()
