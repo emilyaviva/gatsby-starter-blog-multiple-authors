@@ -25,7 +25,7 @@
   "dependencies": {
     "date-fns": "^1.28.2",
     "excerpt-html": "^1.2.0",
-    "feed": "^0.3.1",
+    "feed": "^1.0.2",
     "font-awesome": "^4.7.0",
     "front-matter": "^2.1.2",
     "gatsby": "^0.12.39",
